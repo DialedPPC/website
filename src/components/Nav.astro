@@ -1,0 +1,18 @@
+---
+interface Props {
+  active?: 'home' | 'services' | 'faq';
+  hasContact?: boolean;
+}
+
+const { active, hasContact = false } = Astro.props;
+const contactHref = hasContact ? '#contact' : '/services#contact';
+---
+
+<nav class="nav">
+  <a href="/" class="nav-logo"><span class="led"></span> DialedPPC</a>
+  <div class="nav-links">
+    <a href="/services" class:list={['desktop-only', { active: active === 'services' }]}>Services</a>
+    <a href="/faq" class:list={['desktop-only', { active: active === 'faq' }]}>FAQ</a>
+    <a href={contactHref} class="nav-cta">Get in touch</a>
+  </div>
+</nav>

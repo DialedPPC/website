@@ -1,0 +1,824 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/services.css';
+---
+
+<BaseLayout
+  title="Services | DialedPPC — Amazon PPC Management"
+  description="Amazon PPC management services: structured campaigns, flat-fee pricing, clear reporting. See methodology, pricing, and the 90-day foundation plan."
+  active="services" hasContact
+>
+
+<!-- ═══════════════════════════════════════════════
+     SERVICES HERO
+     ═══════════════════════════════════════════════ -->
+<section class="services-hero" id="top">
+  <h1>Amazon PPC Management, Dialed In</h1>
+  <p class="subhead">Structured campaign management. Clear reporting. Flat-fee pricing that stays predictable as you grow.</p>
+  <a href="#contact" class="btn-primary">Get in touch →</a>
+
+  <div class="jump-nav">
+    <a href="#included">What's Included</a>
+    <a href="#patterns">What We Find</a>
+    <a href="#process">How It Works</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#fit">Who It's For</a>
+    <a href="#contact">Contact</a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     WHAT'S INCLUDED — Alternating visual + copy rows
+     ═══════════════════════════════════════════════ -->
+<section class="included-section" id="included">
+  <div class="included-inner">
+    <div class="section-label" style="color: var(--accent-green);">What's Included</div>
+
+    <!-- 1. Amazon Only -->
+    <div class="included-row">
+      <div class="included-copy">
+        <h3>Amazon only, by design.</h3>
+        <p>PPC performance on Amazon doesn't exist in a vacuum. It's connected to keyword rankings, catalog health, and organic velocity. Managing ads without understanding that ecosystem is like tuning an engine without knowing what car it's in. DialedPPC operates exclusively within Amazon because doing it well requires that focus.</p>
+      </div>
+      <div class="included-visual">
+        <div class="inc-panel">
+          <div class="inc-panel-header">
+            <span class="inc-panel-title">Platform Focus</span>
+            <span class="inc-panel-status"><span class="status-dot"></span> Amazon</span>
+          </div>
+          <div class="eco-ring">
+            <div class="eco-core">Amazon</div>
+            <div class="eco-satellites">
+              <span class="eco-sat active">PPC</span>
+              <span class="eco-sat active">Rankings</span>
+              <span class="eco-sat active">Catalog</span>
+              <span class="eco-sat active">Organic</span>
+            </div>
+            <div class="eco-satellites" style="margin-top: 0.25rem;">
+              <span class="eco-sat dim">Google</span>
+              <span class="eco-sat dim">Meta</span>
+              <span class="eco-sat dim">TikTok</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Strategy -->
+    <div class="included-row reverse">
+      <div class="included-copy">
+        <h3>Strategy drives the metrics, not the other way around.</h3>
+        <p>Most account management focuses on the numbers: keep ACoS in range, hit the targets, report the results. But metrics in isolation don't tell you if your advertising is actually growing your business. Campaign structure, target architecture, and how spend flows across your catalog determine whether your ads are driving growth or just recycling existing demand. We manage the system that produces the metrics, not just the metrics themselves.</p>
+      </div>
+      <div class="included-visual">
+        <div class="inc-panel">
+          <div class="inc-panel-header">
+            <span class="inc-panel-title">Management Depth</span>
+            <span class="inc-panel-status"><span class="status-dot"></span> System</span>
+          </div>
+          <div class="strategy-layers">
+            <div class="strategy-layer surface">
+              <span class="strategy-layer-label">Surface</span>
+              <div class="strategy-layer-items">
+                <span class="strategy-tag">ACoS</span>
+                <span class="strategy-tag">CPC</span>
+                <span class="strategy-tag">ROAS</span>
+                <span class="strategy-tag">Impressions</span>
+              </div>
+            </div>
+            <div class="strategy-arrow">▼ managed by ▼</div>
+            <div class="strategy-layer deep">
+              <span class="strategy-layer-label">System</span>
+              <div class="strategy-layer-items">
+                <span class="strategy-tag">Structure</span>
+                <span class="strategy-tag">Targeting</span>
+                <span class="strategy-tag">Spend flow</span>
+                <span class="strategy-tag">Negation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Flat Pricing -->
+    <div class="included-row">
+      <div class="included-copy">
+        <h3>Straightforward pricing.</h3>
+        <p>Flat monthly fee based on account complexity. Same bill every month. No percentages, no variable costs, no surprises. You know what it costs before we start and it doesn't change unless your needs do.</p>
+      </div>
+      <div class="included-visual">
+        <div class="inc-panel">
+          <div class="inc-panel-header">
+            <span class="inc-panel-title">Cost Structure</span>
+            <span class="inc-panel-status"><span class="status-dot"></span> Flat</span>
+          </div>
+          <div class="fee-visual">
+            <div class="fee-row">
+              <span class="fee-row-label" style="color: var(--accent-amber);">% of spend</span>
+              <div class="fee-bar-wrap">
+                <div class="fee-bar variable" style="width: 35%">$350</div>
+              </div>
+            </div>
+            <div class="fee-row">
+              <span class="fee-row-label" style="color: var(--accent-amber);">% of spend</span>
+              <div class="fee-bar-wrap">
+                <div class="fee-bar variable" style="width: 60%">$900</div>
+              </div>
+            </div>
+            <div class="fee-row">
+              <span class="fee-row-label" style="color: var(--accent-amber);">% of spend</span>
+              <div class="fee-bar-wrap">
+                <div class="fee-bar variable" style="width: 85%">$1,700</div>
+              </div>
+            </div>
+            <div style="border-top: 1px solid var(--border-subtle); margin: 0.5rem 0; padding-top: 0.5rem;">
+              <div class="fee-row">
+                <span class="fee-row-label" style="color: var(--accent-green);">Flat fee</span>
+                <div class="fee-bar-wrap">
+                  <div class="fee-bar flat" style="width: 45%">$750</div>
+                </div>
+              </div>
+              <div class="fee-row">
+                <span class="fee-row-label" style="color: var(--accent-green);">Flat fee</span>
+                <div class="fee-bar-wrap">
+                  <div class="fee-bar flat" style="width: 45%">$750</div>
+                </div>
+              </div>
+              <div class="fee-row">
+                <span class="fee-row-label" style="color: var(--accent-green);">Flat fee</span>
+                <div class="fee-bar-wrap">
+                  <div class="fee-bar flat" style="width: 45%">$750</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Communication -->
+    <div class="included-row reverse">
+      <div class="included-copy">
+        <h3>Communication built for clarity.</h3>
+        <p>No standing weekly calls to fill a calendar slot. Reporting and updates are structured to be useful: what's happening, what it means, what's next. When something warrants a real conversation, we have one. When it doesn't, we don't fabricate one.</p>
+      </div>
+      <div class="included-visual">
+        <div class="inc-panel">
+          <div class="inc-panel-header">
+            <span class="inc-panel-title">Communication Policy</span>
+            <span class="inc-panel-status"><span class="status-dot"></span> Clear</span>
+          </div>
+          <div class="comm-visual">
+            <div class="comm-row">
+              <div class="comm-icon green"></div>
+              <span class="comm-text">Monthly performance analysis</span>
+              <span class="comm-status yes">Standard</span>
+            </div>
+            <div class="comm-row">
+              <div class="comm-icon green"></div>
+              <span class="comm-text">Strategy updates when warranted</span>
+              <span class="comm-status yes">As needed</span>
+            </div>
+            <div class="comm-row">
+              <div class="comm-icon green"></div>
+              <span class="comm-text">Direct access, no middleman</span>
+              <span class="comm-status yes">Always</span>
+            </div>
+            <div class="comm-row">
+              <div class="comm-icon red"></div>
+              <span class="comm-text">Weekly status theater</span>
+              <span class="comm-status no">Never</span>
+            </div>
+            <div class="comm-row">
+              <div class="comm-icon red"></div>
+              <span class="comm-text">Jargon-heavy dashboards</span>
+              <span class="comm-status no">Never</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Clear Boundaries -->
+    <div class="included-row">
+      <div class="included-copy">
+        <h3>Clear boundaries.</h3>
+        <p>DialedPPC manages Amazon advertising. If listings need work, we'll say so. If your strategy needs channels we don't cover, we'll tell you that too and point you in the right direction. We stay focused on what we do best so the work stays at the level your business requires.</p>
+      </div>
+      <div class="included-visual">
+        <div class="inc-panel">
+          <div class="inc-panel-header">
+            <span class="inc-panel-title">Service Scope</span>
+            <span class="inc-panel-status"><span class="status-dot"></span> Defined</span>
+          </div>
+          <div class="scope-visual">
+            <div class="scope-zone in">
+              <div class="scope-zone-header">✓ In scope</div>
+              <div class="scope-zone-items">
+                <span class="scope-item">Campaign management</span>
+                <span class="scope-item">Bid optimization</span>
+                <span class="scope-item">Target architecture</span>
+                <span class="scope-item">Search term analysis</span>
+                <span class="scope-item">Performance reporting</span>
+                <span class="scope-item">Strategy guidance</span>
+              </div>
+            </div>
+            <div class="scope-zone out">
+              <div class="scope-zone-header">→ We'll refer you</div>
+              <div class="scope-zone-items">
+                <span class="scope-item">Listing design</span>
+                <span class="scope-item">Brand creative</span>
+                <span class="scope-item">Off-Amazon ads</span>
+                <span class="scope-item">SEO / social</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Reporting -->
+    <div class="included-row reverse">
+      <div class="included-copy">
+        <h3>Reporting that connects to your business.</h3>
+        <p>No dashboards designed to impress. No vanity metrics leading the page. Analysis that connects what your ads are doing to what your business is doing, and what that means for what comes next.</p>
+      </div>
+      <div class="included-visual">
+        <div class="inc-panel">
+          <div class="inc-panel-header">
+            <span class="inc-panel-title">Report Preview</span>
+            <span class="inc-panel-status"><span class="status-dot"></span> Monthly</span>
+          </div>
+          <div class="report-visual">
+            <div class="report-row">
+              <span class="report-metric">Ad Sales</span>
+              <div class="report-bar-wrap"><div class="report-bar" style="width: 72%"></div></div>
+              <span class="report-note">+12% MoM</span>
+            </div>
+            <div class="report-row">
+              <span class="report-metric">TACoS</span>
+              <div class="report-bar-wrap"><div class="report-bar" style="width: 35%"></div></div>
+              <span class="report-note">8.2% → target</span>
+            </div>
+            <div class="report-row">
+              <span class="report-metric">Organic Rank</span>
+              <div class="report-bar-wrap"><div class="report-bar" style="width: 58%"></div></div>
+              <span class="report-note amber">Climbing</span>
+            </div>
+            <div class="report-row">
+              <span class="report-metric">Wasted Spend</span>
+              <div class="report-bar-wrap"><div class="report-bar" style="width: 12%"></div></div>
+              <span class="report-note">–41% MoM</span>
+            </div>
+            <div class="report-row">
+              <span class="report-metric">New Targets</span>
+              <div class="report-bar-wrap"><div class="report-bar" style="width: 44%"></div></div>
+              <span class="report-note">14 added</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="channel-divider">
+  <div class="line"></div>
+  <span class="label">Diagnostics</span>
+  <div class="line"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     WHAT WE USUALLY FIND
+     ═══════════════════════════════════════════════ -->
+<section class="diag-section" id="patterns">
+  <div class="diag-inner">
+    <div class="section-label" style="color: var(--accent-amber);">What We Usually Find</div>
+
+    <div class="diag-intro">
+      <h2>Most accounts aren't broken in obvious ways.</h2>
+      <p>The campaigns are running. The reports look reasonable. But underneath, the same patterns show up again and again.</p>
+    </div>
+
+    <div class="diag-grid">
+
+      <!-- Pattern 1: ACoS Security Blanket -->
+      <div class="diag-card">
+        <div class="diag-card-visual">
+          <div class="diag-meter">
+            <div class="diag-meter-label">
+              <span class="diag-meter-name">ACoS (Branded)</span>
+              <span class="diag-meter-value green">12%</span>
+            </div>
+            <div class="diag-meter-bar">
+              <div class="diag-meter-fill green" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="diag-meter">
+            <div class="diag-meter-label">
+              <span class="diag-meter-name">ACoS (Non-Brand)</span>
+              <span class="diag-meter-value red">Cut</span>
+            </div>
+            <div class="diag-meter-bar">
+              <div class="diag-meter-fill red" style="width: 10%"></div>
+            </div>
+          </div>
+          <div class="diag-meter">
+            <div class="diag-meter-label">
+              <span class="diag-meter-name">New Customer Acq.</span>
+              <span class="diag-meter-value red">Flat</span>
+            </div>
+            <div class="diag-meter-bar">
+              <div class="diag-meter-fill red" style="width: 15%"></div>
+            </div>
+          </div>
+          <div class="diag-meter">
+            <div class="diag-meter-label">
+              <span class="diag-meter-name">Revenue Growth</span>
+              <span class="diag-meter-value amber">Stalled</span>
+            </div>
+            <div class="diag-meter-bar">
+              <div class="diag-meter-fill amber" style="width: 22%"></div>
+            </div>
+          </div>
+          <div class="diag-verdict">⚠ Metric healthy. Business standing still.</div>
+        </div>
+        <div class="diag-card-content">
+          <h3>ACoS looks fine. Growth doesn't.</h3>
+          <p>Campaign-level ACoS is hitting its target, but it's being carried by branded search terms that would convert with or without ads. Meanwhile, targets that could actually drive new customers are getting cut because they don't hit the number. The metric everyone watches is healthy. The business is standing still.</p>
+        </div>
+      </div>
+
+      <!-- Pattern 2: Structure Without Strategy -->
+      <div class="diag-card">
+        <div class="diag-card-visual">
+          <div class="diag-meter">
+            <div class="diag-meter-label">
+              <span class="diag-meter-name">Active Campaigns</span>
+              <span class="diag-meter-value amber">47</span>
+            </div>
+            <div class="diag-meter-bar">
+              <div class="diag-meter-fill amber" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="diag-meter">
+            <div class="diag-meter-label">
+              <span class="diag-meter-name">Target Overlap</span>
+              <span class="diag-meter-value red">High</span>
+            </div>
+            <div class="diag-meter-bar">
+              <div class="diag-meter-fill red" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="diag-meter">
+            <div class="diag-meter-label">
+              <span class="diag-meter-name">Negation Coverage</span>
+              <span class="diag-meter-value red">12%</span>
+            </div>
+            <div class="diag-meter-bar">
+              <div class="diag-meter-fill red" style="width: 12%"></div>
+            </div>
+          </div>
+          <div class="diag-meter">
+            <div class="diag-meter-label">
+              <span class="diag-meter-name">Structural Intent</span>
+              <span class="diag-meter-value red">None</span>
+            </div>
+            <div class="diag-meter-bar">
+              <div class="diag-meter-fill red" style="width: 5%"></div>
+            </div>
+          </div>
+          <div class="diag-verdict">⚠ Not a strategy. An accumulation.</div>
+        </div>
+        <div class="diag-card-content">
+          <h3>Ads everywhere. No structure anywhere.</h3>
+          <p>Multiple campaigns, overlapping targets, converting search terms spread across several ad groups with no negation and no intent behind the organization. Nobody's managing the architecture. They're managing the metrics. The campaigns aren't a strategy. They're an accumulation.</p>
+        </div>
+      </div>
+
+      <!-- Pattern 3: Fear of Change -->
+      <div class="diag-card">
+        <div class="diag-card-visual">
+          <div class="diag-meter">
+            <div class="diag-meter-label">
+              <span class="diag-meter-name">Legacy Campaigns</span>
+              <span class="diag-meter-value amber">Active</span>
+            </div>
+            <div class="diag-meter-bar">
+              <div class="diag-meter-fill amber" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="diag-meter">
+            <div class="diag-meter-label">
+              <span class="diag-meter-name">Ad Spend Trend</span>
+              <span class="diag-meter-value red">↑ Rising</span>
+            </div>
+            <div class="diag-meter-bar">
+              <div class="diag-meter-fill red" style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="diag-meter">
+            <div class="diag-meter-label">
+              <span class="diag-meter-name">Total Revenue</span>
+              <span class="diag-meter-value amber">→ Flat</span>
+            </div>
+            <div class="diag-meter-bar">
+              <div class="diag-meter-fill amber" style="width: 40%"></div>
+            </div>
+          </div>
+          <div class="diag-meter">
+            <div class="diag-meter-label">
+              <span class="diag-meter-name">Campaigns Paused</span>
+              <span class="diag-meter-value red">0</span>
+            </div>
+            <div class="diag-meter-bar">
+              <div class="diag-meter-fill red" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="diag-verdict">⚠ Spend rising. Revenue flat. Nothing changed.</div>
+        </div>
+        <div class="diag-card-content">
+          <h3>Nobody wants to turn anything off.</h3>
+          <p>After one or two agencies, the account is layers on top of layers. Every campaign is "generating sales," so nothing gets paused or restructured, even when ad spend keeps climbing and total revenue isn't keeping pace. The seller knows something is off but can't justify changing what appears to be working.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="diag-closer">The common thread: <strong>the numbers everyone focuses on are fine. The business outcomes those numbers are supposed to drive aren't.</strong> That's usually where we start.</p>
+  </div>
+</section>
+
+<div class="channel-divider">
+  <div class="line"></div>
+  <span class="label">Process</span>
+  <div class="line"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     HOW IT WORKS
+     ═══════════════════════════════════════════════ -->
+<section class="process-section" id="process">
+  <div class="process-inner">
+    <div class="section-label" style="color: var(--accent-green);">How It Works</div>
+
+    <div class="process-track">
+      <div class="process-step">
+        <div class="process-step-num">01</div>
+        <div class="process-step-copy">
+          <h3>We look at your account.</h3>
+          <p>A full audit of current campaigns, performance history, and account structure. You get a clear picture of where things stand: what's working, what's not, and why. No jargon, no upsell. Just an honest read.</p>
+        </div>
+        <div class="process-step-detail">
+          <div class="process-detail-row">
+            <div class="process-detail-dot"></div>
+            <span class="process-detail-text">Campaign structure review</span>
+          </div>
+          <div class="process-detail-row">
+            <div class="process-detail-dot"></div>
+            <span class="process-detail-text">Performance history analysis</span>
+          </div>
+          <div class="process-detail-row">
+            <div class="process-detail-dot"></div>
+            <span class="process-detail-text">Spend efficiency assessment</span>
+          </div>
+          <div class="process-detail-row">
+            <div class="process-detail-dot"></div>
+            <span class="process-detail-text">Gap and opportunity identification</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="process-step-num">02</div>
+        <div class="process-step-copy">
+          <h3>We build a strategy based on data and your objectives.</h3>
+          <p>Not a template. Not "best practices." A strategy grounded in your account data and your business objectives, whether that's profitability, growth, launch support, or defending market position. You'll understand the reasoning behind every decision.</p>
+        </div>
+        <div class="process-step-detail">
+          <div class="process-detail-row">
+            <div class="process-detail-dot"></div>
+            <span class="process-detail-text">Campaign architecture design</span>
+          </div>
+          <div class="process-detail-row">
+            <div class="process-detail-dot"></div>
+            <span class="process-detail-text">Target strategy and segmentation</span>
+          </div>
+          <div class="process-detail-row">
+            <div class="process-detail-dot"></div>
+            <span class="process-detail-text">Budget allocation framework</span>
+          </div>
+          <div class="process-detail-row">
+            <div class="process-detail-dot"></div>
+            <span class="process-detail-text">KPI alignment with business goals</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="process-step-num">03</div>
+        <div class="process-step-copy">
+          <h3>Ongoing management with clear reporting.</h3>
+          <p>Campaigns get the optimization volume and attention the data demands. Reporting connects ad performance to business outcomes. When something needs a real conversation, we have one. When it doesn't, you're not sitting through one anyway.</p>
+        </div>
+        <div class="process-step-detail">
+          <div class="process-detail-row">
+            <div class="process-detail-dot"></div>
+            <span class="process-detail-text">Daily bid optimization</span>
+          </div>
+          <div class="process-detail-row">
+            <div class="process-detail-dot"></div>
+            <span class="process-detail-text">Search term harvesting and negation</span>
+          </div>
+          <div class="process-detail-row">
+            <div class="process-detail-dot"></div>
+            <span class="process-detail-text">Monthly performance analysis</span>
+          </div>
+          <div class="process-detail-row">
+            <div class="process-detail-dot"></div>
+            <span class="process-detail-text">Strategy adjustments as data evolves</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="new-seller">
+      <h4>Launching on Amazon?</h4>
+      <p>New to Amazon advertising, or advertising for the first time? The same methodology applies, just with a different starting point. We build campaign structure from scratch based on your catalog, your category, and your goals. The fundamentals don't change: disciplined structure, ongoing optimization, honest reporting from day one.</p>
+    </div>
+  </div>
+</section>
+
+<div class="channel-divider">
+  <div class="line"></div>
+  <span class="label">Pricing</span>
+  <div class="line"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     PRICING
+     ═══════════════════════════════════════════════ -->
+<section class="pricing-section" id="pricing">
+  <div class="pricing-inner">
+    <div class="section-label" style="color: var(--accent-green);">Pricing</div>
+
+    <div class="pricing-tiers">
+      <div class="pricing-card">
+        <div class="pricing-card-name">Starter</div>
+        <div class="pricing-card-spend">Up to $5K monthly ad spend</div>
+        <div class="pricing-card-price">$TBD<span> /month</span></div>
+        <div class="pricing-card-setup">+ $TBD one-time setup</div>
+      </div>
+      <div class="pricing-card featured">
+        <div class="pricing-card-name">Growth</div>
+        <div class="pricing-card-spend">$5K to $15K monthly ad spend</div>
+        <div class="pricing-card-price">$TBD<span> /month</span></div>
+        <div class="pricing-card-setup">+ $TBD one-time setup</div>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-card-name">Scale</div>
+        <div class="pricing-card-spend">$15K to $50K monthly ad spend</div>
+        <div class="pricing-card-price">$TBD<span> /month</span></div>
+        <div class="pricing-card-setup">+ $TBD one-time setup</div>
+      </div>
+    </div>
+
+    <div class="pricing-includes">
+      <h3>Included in every tier:</h3>
+      <div class="pricing-include-grid">
+        <div class="pricing-include-item">
+          <div class="pricing-include-dot"></div>
+          <span class="pricing-include-text">Full account audit and restructure plan (or new account build)</span>
+        </div>
+        <div class="pricing-include-item">
+          <div class="pricing-include-dot"></div>
+          <span class="pricing-include-text">Ongoing campaign optimization</span>
+        </div>
+        <div class="pricing-include-item">
+          <div class="pricing-include-dot"></div>
+          <span class="pricing-include-text">Monthly performance analysis tied to business outcomes</span>
+        </div>
+        <div class="pricing-include-item">
+          <div class="pricing-include-dot"></div>
+          <span class="pricing-include-text">Structured reporting built for clarity</span>
+        </div>
+        <div class="pricing-include-item">
+          <div class="pricing-include-dot"></div>
+          <span class="pricing-include-text">Direct access, no account manager middleman</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     90-DAY TIMELINE
+     ═══════════════════════════════════════════════ -->
+<section class="timeline-section">
+  <div class="timeline-inner">
+    <div class="section-label" style="color: var(--accent-green);">The First 90 Days</div>
+
+    <div class="timeline-intro">
+      <h2>90-day initial engagement.</h2>
+      <p>Amazon advertising doesn't produce meaningful results overnight, and how fast things move depends on where your account starts. But the progression follows the same discipline regardless.</p>
+    </div>
+
+    <div class="timeline-phases">
+      <div class="timeline-phase">
+        <div class="timeline-phase-label">Phase 1</div>
+        <h3>Foundation</h3>
+        <p>Campaign structure built or rebuilt with clear intent behind every decision. Data starts flowing in a way that's actually useful. You understand what exists, why, and what it's designed to do.</p>
+      </div>
+      <div class="timeline-phase">
+        <div class="timeline-phase-label">Phase 2</div>
+        <h3>Refinement</h3>
+        <p>Real performance data drives decisions. Targets that aren't working get cut. Cost controls tighten. Gaps and opportunities become visible. The structure starts earning its keep.</p>
+      </div>
+      <div class="timeline-phase">
+        <div class="timeline-phase-label">Phase 3</div>
+        <h3>Expansion</h3>
+        <p>With a foundation producing reliable data and a refined core, we push into additional campaign types, new targets, and strategic positioning with confidence instead of guesswork.</p>
+      </div>
+    </div>
+
+    <p class="timeline-note">Some accounts move through this in weeks. Others need the full 90 days. The timeline flexes. The discipline doesn't. <strong>After 90 days, service continues month-to-month.</strong> If the work speaks for itself, you'll want to stay. If it doesn't, you're free to go.</p>
+  </div>
+</section>
+
+<div class="channel-divider">
+  <div class="line"></div>
+  <span class="label">Fit Check</span>
+  <div class="line"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     WHO THIS IS FOR
+     ═══════════════════════════════════════════════ -->
+<section class="fit-section" id="fit">
+  <div class="fit-inner">
+    <div class="section-label" style="color: var(--accent-green);">Who This Is For</div>
+
+    <div class="fit-grid">
+      <div class="fit-card good">
+        <div class="fit-card-header">
+          <div class="status-dot"></div>
+          <span class="fit-card-title">Good Fit</span>
+        </div>
+        <div class="fit-item">
+          <span class="fit-item-icon">→</span>
+          <span class="fit-item-text">You understand that advertising is one part of your business, not the whole strategy. You're looking for someone to handle it well so you can focus on the rest.</span>
+        </div>
+        <div class="fit-item">
+          <span class="fit-item-icon">→</span>
+          <span class="fit-item-text">You want to understand what's being done with your advertising and why. Not to control it, but because it's your business and informed decisions matter to you.</span>
+        </div>
+        <div class="fit-item">
+          <span class="fit-item-icon">→</span>
+          <span class="fit-item-text">You think about your business in terms of fundamentals: margins, product quality, long-term positioning. Not just revenue targets and growth at any cost.</span>
+        </div>
+        <div class="fit-item">
+          <span class="fit-item-icon">→</span>
+          <span class="fit-item-text">You know something about your current advertising isn't right, or you're new and want it built properly from the start.</span>
+        </div>
+        <div class="fit-item">
+          <span class="fit-item-icon">→</span>
+          <span class="fit-item-text">You communicate when there's something to discuss and respect that not everything needs a meeting.</span>
+        </div>
+      </div>
+
+      <div class="fit-card not">
+        <div class="fit-card-header">
+          <div class="status-dot amber"></div>
+          <span class="fit-card-title">Not the Right Fit</span>
+        </div>
+        <div class="fit-item">
+          <span class="fit-item-icon">—</span>
+          <span class="fit-item-text">Need advertising managed across multiple platforms (Google, Meta, etc.)</span>
+        </div>
+        <div class="fit-item">
+          <span class="fit-item-icon">—</span>
+          <span class="fit-item-text">Looking for full-service account management (listings, brand design, catalog strategy)</span>
+        </div>
+        <div class="fit-item">
+          <span class="fit-item-icon">—</span>
+          <span class="fit-item-text">Expecting meaningful results in the first two weeks. Advertising takes time to dial in.</span>
+        </div>
+        <div class="fit-item">
+          <span class="fit-item-icon">—</span>
+          <span class="fit-item-text">Have a specific playbook you need your manager to follow. We're happy to explain our reasoning, but if you need to control the how, we're not the right partner.</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="fit-bridge">Not quite the right fit? Reach out anyway. If we can point you in a better direction, we will.</p>
+  </div>
+</section>
+
+<div class="channel-divider">
+  <div class="line"></div>
+  <span class="label">Output</span>
+  <div class="line"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     CTA / FORM
+     ═══════════════════════════════════════════════ -->
+<section class="cta-section" id="contact">
+  <div class="cta-inner">
+    <div class="section-label" style="color: var(--accent-green);">Get Started</div>
+    <h2>Let's start with your account.</h2>
+    <p>A few quick questions about your business and your advertising. We take time to review every submission before responding, and you'll hear back within two business days with an honest assessment.</p>
+
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <p style="display:none"><input name="bot-field"></p>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group full-width">
+          <label for="company">Brand / Company</label>
+          <input type="text" id="company" name="company">
+        </div>
+        <div class="form-group">
+          <label for="advertising">Currently advertising on Amazon?</label>
+          <select id="advertising" name="advertising">
+            <option value="" disabled selected>Select one</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="not-yet">Not yet, planning to</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="spend">Approximate monthly ad spend</label>
+          <select id="spend" name="spend">
+            <option value="" disabled selected>Select range</option>
+            <option value="under-2k">Under $2,000</option>
+            <option value="2k-5k">$2,000 – $5,000</option>
+            <option value="5k-15k">$5,000 – $15,000</option>
+            <option value="15k-50k">$15,000 – $50,000</option>
+            <option value="50k-plus">$50,000+</option>
+            <option value="not-sure">Not sure</option>
+          </select>
+        </div>
+        <div class="form-group full-width">
+          <label for="description">What are you looking for? <span style="color: var(--text-dim)">(optional)</span></label>
+          <textarea id="description" name="description" placeholder="Briefly describe your situation, goals, or questions."></textarea>
+        </div>
+      </div>
+      <div class="form-submit">
+        <button type="submit" class="btn-primary">Submit →</button>
+      </div>
+    </form>
+    <div class="form-footer">No pitch. No pressure. No calendar ambush. Currently accepting new clients — limited availability.</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<script is:inline>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.included-row, .diag-card, .process-step, .pricing-card, .timeline-phase, .fit-card, .cta-inner, .new-seller, .diag-intro, .diag-closer, .pricing-includes, .timeline-intro, .timeline-note').forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(25px)';
+    el.style.transition = `opacity 0.7s ease ${i * 0.04}s, transform 0.7s ease ${i * 0.04}s`;
+    observer.observe(el);
+  });
+
+  // Animate meters and bars on scroll
+  const barObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.diag-meter-fill, .report-bar, .fee-bar').forEach(bar => {
+          const val = bar.style.width;
+          bar.style.width = '0%';
+          setTimeout(() => { bar.style.width = val; }, 300);
+        });
+        barObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.diag-card-visual, .inc-panel').forEach(el => {
+    barObserver.observe(el);
+  });
+</script>
+
+</BaseLayout>

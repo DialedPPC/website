@@ -1,0 +1,503 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/index.css';
+---
+
+<BaseLayout
+  title="DialedPPC | Amazon PPC Management, Dialed In"
+  description="Focused Amazon PPC management from an experienced consultant. Flat monthly fee, no meeting theater, direct expert access."
+  active="home" hasContact
+>
+
+<!-- ═══════════════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <h1 class="animate-in">
+        Ads management shouldn't require your <span class="accent">constant attention.</span>
+      </h1>
+      <p class="subhead animate-in delay-2">
+        Amazon PPC management built to run, report with clarity, and stay out of your way.
+      </p>
+      <div class="hero-cta-group animate-in delay-3">
+        <a href="#contact" class="btn-primary">Get in touch →</a>
+      </div>
+      <p class="scarcity animate-in delay-4">Currently accepting new clients</p>
+    </div>
+
+    <div class="hero-visual animate-in delay-2">
+      <div class="vu-display">
+        <div class="vu-header">
+          <span class="vu-title">Account Performance</span>
+          <span class="vu-status"><span class="dot"></span> Dialed</span>
+        </div>
+        <div class="vu-meter">
+          <div class="vu-meter-label">
+            <span class="vu-meter-name">Campaign Structure</span>
+            <span class="vu-meter-value">Optimized</span>
+          </div>
+          <div class="vu-meter-bar">
+            <div class="vu-meter-fill green" style="width: 88%"></div>
+          </div>
+        </div>
+        <div class="vu-meter">
+          <div class="vu-meter-label">
+            <span class="vu-meter-name">Spend Efficiency</span>
+            <span class="vu-meter-value">On target</span>
+          </div>
+          <div class="vu-meter-bar">
+            <div class="vu-meter-fill green" style="width: 76%"></div>
+          </div>
+        </div>
+        <div class="vu-meter">
+          <div class="vu-meter-label">
+            <span class="vu-meter-name">Organic Velocity</span>
+            <span class="vu-meter-value amber">Climbing</span>
+          </div>
+          <div class="vu-meter-bar">
+            <div class="vu-meter-fill amber" style="width: 62%"></div>
+          </div>
+        </div>
+        <div class="vu-meter">
+          <div class="vu-meter-label">
+            <span class="vu-meter-name">Wasted Spend</span>
+            <span class="vu-meter-value">Contained</span>
+          </div>
+          <div class="vu-meter-bar">
+            <div class="vu-meter-fill split" style="width: 15%"></div>
+          </div>
+          <div class="vu-meter-ticks">
+            <span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+          </div>
+        </div>
+        <div class="vu-footer">
+          <div class="vu-stat">
+            <div class="vu-stat-value">24/7</div>
+            <div class="vu-stat-label">Monitoring</div>
+          </div>
+          <div class="vu-stat">
+            <div class="vu-stat-value">Flat</div>
+            <div class="vu-stat-label">Fee Structure</div>
+          </div>
+          <div class="vu-stat">
+            <div class="vu-stat-value">Zero</div>
+            <div class="vu-stat-label">Theater</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="channel-divider">
+  <div class="line"></div>
+  <span class="label">Signal Path</span>
+  <div class="line"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     PROBLEM
+     ═══════════════════════════════════════════════ -->
+<section class="problem-section">
+  <div class="problem-inner">
+    <div class="problem-header">
+      <div class="section-label">The Noise</div>
+      <h2>Metrics that seem okay. A business that isn't growing. Nobody can tell you why.</h2>
+    </div>
+
+    <div class="console-compare">
+      <!-- NOISE panel -->
+      <div class="console-panel noise">
+        <div class="console-panel-header">
+          <span class="console-panel-title">Typical Management</span>
+          <span class="console-panel-status"><span class="status-dot"></span> Undialed</span>
+        </div>
+        <div class="console-row">
+          <span class="console-row-label">Reporting</span>
+          <span class="console-row-value">Metrics dump <span class="mini-meter"><span class="mini-meter-fill amber" style="width: 90%"></span></span></span>
+        </div>
+        <div class="console-row">
+          <span class="console-row-label">Strategy</span>
+          <span class="console-row-value bad">"Spend more" <span class="mini-meter"><span class="mini-meter-fill red" style="width: 25%"></span></span></span>
+        </div>
+        <div class="console-row">
+          <span class="console-row-label">Structure</span>
+          <span class="console-row-value meh">Accumulated <span class="mini-meter"><span class="mini-meter-fill amber" style="width: 40%"></span></span></span>
+        </div>
+        <div class="console-row">
+          <span class="console-row-label">Communication</span>
+          <span class="console-row-value">Weekly theater <span class="mini-meter"><span class="mini-meter-fill amber" style="width: 70%"></span></span></span>
+        </div>
+        <div class="console-row">
+          <span class="console-row-label">Your time</span>
+          <span class="console-row-value bad">Consumed <span class="mini-meter"><span class="mini-meter-fill red" style="width: 85%"></span></span></span>
+        </div>
+      </div>
+
+      <div class="vs-divider">
+        <span class="vs-text">VS</span>
+      </div>
+
+      <!-- SIGNAL panel -->
+      <div class="console-panel signal">
+        <div class="console-panel-header">
+          <span class="console-panel-title">DialedPPC</span>
+          <span class="console-panel-status"><span class="status-dot"></span> Dialed</span>
+        </div>
+        <div class="console-row">
+          <span class="console-row-label">Reporting</span>
+          <span class="console-row-value">Business clarity <span class="mini-meter"><span class="mini-meter-fill green" style="width: 90%"></span></span></span>
+        </div>
+        <div class="console-row">
+          <span class="console-row-label">Strategy</span>
+          <span class="console-row-value">Data-driven <span class="mini-meter"><span class="mini-meter-fill green" style="width: 85%"></span></span></span>
+        </div>
+        <div class="console-row">
+          <span class="console-row-label">Structure</span>
+          <span class="console-row-value">Intentional <span class="mini-meter"><span class="mini-meter-fill green" style="width: 88%"></span></span></span>
+        </div>
+        <div class="console-row">
+          <span class="console-row-label">Communication</span>
+          <span class="console-row-value">When it matters <span class="mini-meter"><span class="mini-meter-fill green" style="width: 80%"></span></span></span>
+        </div>
+        <div class="console-row">
+          <span class="console-row-label">Your time</span>
+          <span class="console-row-value">Yours <span class="mini-meter"><span class="mini-meter-fill green" style="width: 95%"></span></span></span>
+        </div>
+      </div>
+    </div>
+
+    <p class="problem-closer">
+      Either way, you're in the same place — spending money on advertising, not sure if it's doing what it should, and no one giving you a straight answer. <strong>Most sellers aren't looking for a new agency. They're looking for someone who actually knows what they're looking at.</strong>
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     DIALED / PROMISE — copy + signal path visual
+     ═══════════════════════════════════════════════ -->
+<section class="dialed-section">
+  <div class="dialed-inner">
+    <div class="dialed-copy">
+      <div class="section-label" style="color: var(--accent-green);">The Signal</div>
+      <h2>Your advertising should be one less thing demanding your attention, not one more.</h2>
+      <p>Your margins, your operations, your product, your supply chain — <strong>those determine whether your business grows.</strong> Great advertising supports a strong business. It can't rescue a weak one.</p>
+      <p>That's the point. Not a magic solution. Not heroics. <strong>A clear lane</strong> — managed by someone who understands the system, communicates without theater, and stays focused so you don't have to.</p>
+    </div>
+
+    <div class="signal-path">
+      <div class="signal-path-header">How It Works</div>
+      <div class="signal-stage">
+        <div class="signal-stage-num">01</div>
+        <div class="signal-stage-content">
+          <div class="signal-stage-name">Account Audit</div>
+          <div class="signal-stage-desc">Structure, spend, gaps — honest assessment</div>
+        </div>
+        <div class="signal-stage-indicator"></div>
+      </div>
+      <div class="signal-stage">
+        <div class="signal-stage-num">02</div>
+        <div class="signal-stage-content">
+          <div class="signal-stage-name">Foundation Build</div>
+          <div class="signal-stage-desc">Campaign architecture, targeting, budget allocation</div>
+        </div>
+        <div class="signal-stage-indicator"></div>
+      </div>
+      <div class="signal-stage">
+        <div class="signal-stage-num">03</div>
+        <div class="signal-stage-content">
+          <div class="signal-stage-name">Ongoing Management</div>
+          <div class="signal-stage-desc">Daily optimization, bid management, negation</div>
+        </div>
+        <div class="signal-stage-indicator"></div>
+      </div>
+      <div class="signal-stage">
+        <div class="signal-stage-num">04</div>
+        <div class="signal-stage-content">
+          <div class="signal-stage-name">Clear Reporting</div>
+          <div class="signal-stage-desc">What happened, what it means, what's next</div>
+        </div>
+        <div class="signal-stage-indicator"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="channel-divider">
+  <div class="line"></div>
+  <span class="label">Channel Strip</span>
+  <div class="line"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     DIFFERENTIATORS — Unique visual per card
+     ═══════════════════════════════════════════════ -->
+<section class="diff-section">
+  <div class="diff-inner">
+    <div class="section-label">What's Different Here</div>
+
+    <div class="diff-grid">
+      <!-- AMAZON ONLY — Focus scope: one channel lit, others dim -->
+      <div class="diff-card">
+        <div class="diff-card-visual">
+          <div class="scope-visual">
+            <div class="scope-channel inactive"></div>
+            <div class="scope-channel inactive"></div>
+            <div class="scope-channel active"></div>
+            <div class="scope-channel active tall"></div>
+            <div class="scope-channel active"></div>
+            <div class="scope-channel inactive"></div>
+            <div class="scope-channel inactive"></div>
+          </div>
+        </div>
+        <div class="diff-card-title">Amazon Only</div>
+        <div class="diff-card-sub">Ads, rankings, catalog health — one ecosystem, full focus. No spreading thin across platforms we don't specialize in.</div>
+      </div>
+
+      <!-- STRATEGY FIRST — EQ curve: shaped, not random -->
+      <div class="diff-card">
+        <div class="diff-card-visual">
+          <div class="eq-visual">
+            <div class="eq-band dim" style="height: 16px"></div>
+            <div class="eq-band green-dim" style="height: 24px"></div>
+            <div class="eq-band green" style="height: 48px"></div>
+            <div class="eq-band green" style="height: 60px"></div>
+            <div class="eq-band green" style="height: 52px"></div>
+            <div class="eq-band green-dim" style="height: 36px"></div>
+            <div class="eq-band green-dim" style="height: 28px"></div>
+            <div class="eq-band amber" style="height: 20px"></div>
+            <div class="eq-band dim" style="height: 14px"></div>
+            <div class="eq-band dim" style="height: 10px"></div>
+          </div>
+        </div>
+        <div class="diff-card-title">Strategy First</div>
+        <div class="diff-card-sub">We manage the system that produces the metrics — not just the metrics themselves.</div>
+      </div>
+
+      <!-- FLAT PRICING — Flatline vs chaos -->
+      <div class="diff-card">
+        <div class="diff-card-visual">
+          <div class="flatline-visual">
+            <svg viewBox="0 0 200 72" preserveAspectRatio="none">
+              <!-- Chaotic % of spend line -->
+              <path class="flatline-path-chaos" d="M0,50 Q20,20 40,45 Q60,60 80,30 Q100,15 120,55 Q140,65 160,25 Q180,10 200,40" />
+              <!-- Flat fee line -->
+              <line class="flatline-path-flat" x1="0" y1="38" x2="200" y2="38" />
+              <!-- Labels -->
+              <text class="flatline-label" x="4" y="10" fill="#64748b">% of spend</text>
+              <text class="flatline-label" x="4" y="68" fill="#34d399">Flat fee</text>
+            </svg>
+          </div>
+        </div>
+        <div class="diff-card-title">Flat Pricing</div>
+        <div class="diff-card-sub">Same bill every month. Your cost doesn't go up just because your advertising is working.</div>
+      </div>
+    </div>
+
+    <div class="diff-grid-bottom">
+      <!-- CLEAR COMMS — Signal clarity bars -->
+      <div class="diff-card">
+        <div class="diff-card-visual">
+          <div class="clarity-visual">
+            <div class="clarity-row">
+              <span class="clarity-label">Signal</span>
+              <div class="clarity-bar-wrap">
+                <div class="clarity-bar" style="width: 90%; background: var(--accent-green);"></div>
+              </div>
+              <span class="clarity-value green">High</span>
+            </div>
+            <div class="clarity-row">
+              <span class="clarity-label">Noise</span>
+              <div class="clarity-bar-wrap">
+                <div class="clarity-bar" style="width: 12%; background: var(--accent-amber);"></div>
+              </div>
+              <span class="clarity-value amber">Low</span>
+            </div>
+            <div class="clarity-row">
+              <span class="clarity-label">Clarity</span>
+              <div class="clarity-bar-wrap">
+                <div class="clarity-bar" style="width: 85%; background: var(--accent-green);"></div>
+              </div>
+              <span class="clarity-value green">High</span>
+            </div>
+          </div>
+        </div>
+        <div class="diff-card-title">Clear Comms</div>
+        <div class="diff-card-sub">What's happening, what it means, what's next. No jargon dumps, no weekly theater.</div>
+      </div>
+
+      <!-- HONEST SCOPE — Boundary zones -->
+      <div class="diff-card">
+        <div class="diff-card-visual">
+          <div class="boundary-visual">
+            <div class="boundary-zone">
+              <div class="boundary-block inside">We do this</div>
+              <div class="boundary-divider-v"></div>
+              <div class="boundary-block outside">Not this</div>
+            </div>
+            <div class="boundary-zone">
+              <div class="boundary-block inside">PPC · Rankings · Catalog</div>
+              <div class="boundary-divider-v"></div>
+              <div class="boundary-block outside">Design · SEO · Social</div>
+            </div>
+            <div class="boundary-caption">Clear boundaries → clear results</div>
+          </div>
+        </div>
+        <div class="diff-card-title">Honest Scope</div>
+        <div class="diff-card-sub">We do one thing well and tell you when you need something else. No scope creep, no overpromising.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SOCIAL PROOF / CREDENTIALS
+     ═══════════════════════════════════════════════ -->
+<section class="proof-section">
+  <div class="proof-inner">
+    <div class="proof-stats">
+      <div class="proof-stat">
+        <div class="proof-stat-value">5+</div>
+        <div class="proof-stat-label">Years in Amazon PPC</div>
+      </div>
+      <div class="proof-stat">
+        <div class="proof-stat-value">$2M+</div>
+        <div class="proof-stat-label">Ad Spend Managed</div>
+      </div>
+      <div class="proof-stat">
+        <div class="proof-stat-value">Direct</div>
+        <div class="proof-stat-label">Expert Access</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section">
+  <div class="pricing-inner">
+    <h2>Flat-fee pricing. No percentage of ad spend.</h2>
+    <div class="pricing-range">$750 – $1,500<span> /month</span></div>
+    <p>Based on account complexity, not your ad budget. Predictable costs that don't punish you for growing.</p>
+    <a href="/services#pricing" class="pricing-link">
+      See full pricing details <span class="arrow">→</span>
+    </a>
+  </div>
+</section>
+
+<div class="channel-divider">
+  <div class="line"></div>
+  <span class="label">Output</span>
+  <div class="line"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     CTA / FORM
+     ═══════════════════════════════════════════════ -->
+<section class="cta-section" id="contact">
+  <div class="cta-inner">
+    <div class="section-label" style="color: var(--accent-green);">Get Started</div>
+    <h2>Let's start with your account.</h2>
+    <p>A few quick questions. You'll hear back within two business days with an honest assessment.</p>
+
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <p style="display:none"><input name="bot-field"></p>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group full-width">
+          <label for="company">Brand / Company</label>
+          <input type="text" id="company" name="company">
+        </div>
+        <div class="form-group">
+          <label for="advertising">Currently advertising on Amazon?</label>
+          <select id="advertising" name="advertising">
+            <option value="" disabled selected>Select one</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="not-yet">Not yet, planning to</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="spend">Approximate monthly ad spend</label>
+          <select id="spend" name="spend">
+            <option value="" disabled selected>Select range</option>
+            <option value="under-2k">Under $2,000</option>
+            <option value="2k-5k">$2,000 – $5,000</option>
+            <option value="5k-15k">$5,000 – $15,000</option>
+            <option value="15k-50k">$15,000 – $50,000</option>
+            <option value="50k-plus">$50,000+</option>
+            <option value="not-sure">Not sure</option>
+          </select>
+        </div>
+        <div class="form-group full-width">
+          <label for="description">What are you looking for? <span style="color: var(--text-dim)">(optional)</span></label>
+          <textarea id="description" name="description" placeholder="Briefly describe your situation, goals, or questions."></textarea>
+        </div>
+      </div>
+      <div class="form-submit">
+        <button type="submit" class="btn-primary">Submit →</button>
+      </div>
+    </form>
+    <div class="form-footer">No pitch. No pressure. No calendar ambush.</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<script is:inline>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.problem-inner, .dialed-inner, .console-panel, .diff-card, .pricing-inner, .cta-inner, .proof-inner, .signal-path').forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = `opacity 0.7s ease ${i * 0.05}s, transform 0.7s ease ${i * 0.05}s`;
+    observer.observe(el);
+  });
+
+  window.addEventListener('load', () => {
+    // VU meters
+    document.querySelectorAll('.vu-meter-fill').forEach(fill => {
+      const w = fill.style.width;
+      fill.style.width = '0%';
+      setTimeout(() => { fill.style.width = w; }, 500);
+    });
+    // Mini meters
+    document.querySelectorAll('.mini-meter-fill').forEach(fill => {
+      const w = fill.style.width;
+      fill.style.width = '0%';
+      setTimeout(() => { fill.style.width = w; }, 800);
+    });
+    // EQ bands
+    document.querySelectorAll('.eq-band').forEach(band => {
+      const h = band.style.height;
+      band.style.height = '0px';
+      setTimeout(() => { band.style.height = h; }, 700);
+    });
+    // Clarity bars
+    document.querySelectorAll('.clarity-bar').forEach(bar => {
+      const w = bar.style.width;
+      bar.style.width = '0%';
+      setTimeout(() => { bar.style.width = w; }, 900);
+    });
+  });
+</script>
+
+</BaseLayout>

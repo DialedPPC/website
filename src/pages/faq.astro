@@ -1,0 +1,644 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+---
+
+<BaseLayout
+  title="FAQ | DialedPPC — Amazon PPC Management Questions Answered"
+  description="Answers to common Amazon PPC questions: management costs, ACoS benchmarks, what to expect from a specialist, and how DialedPPC works."
+  active="faq"
+>
+
+<!-- HERO -->
+<section class="faq-hero">
+  <h1>Frequently Asked Questions</h1>
+  <p class="subhead">Common questions about Amazon PPC management, how DialedPPC works, and what to expect.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SECTION 1: Amazon PPC Fundamentals
+     ═══════════════════════════════════════════ -->
+<section class="faq-section">
+  <div class="section-label" style="color: var(--accent-green);">Amazon PPC Fundamentals</div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">
+      <h3>How much does Amazon PPC management cost?</h3>
+      <div class="faq-toggle">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="0" x2="7" y2="14"/><line x1="0" y1="7" x2="14" y2="7"/></svg>
+      </div>
+    </div>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>It depends on who you hire and how they charge. Most agencies use a percentage-of-ad-spend model, typically 10–20% of your monthly ad budget. That means as your ad spend grows, their fee grows — whether the actual work changed or not. The incentive is baked in: higher spend means higher fees for them, regardless of whether that spend is doing anything useful for you.</p>
+        <p>DialedPPC uses <strong>flat monthly pricing based on what actually drives the work</strong> — catalog size and order volume, not ad spend. A larger catalog means more campaigns, more targeting decisions, and more optimization surface. Higher order volume means more data flowing through the system that needs to be analyzed and acted on. Those are the things that determine how much time and attention your account requires, so those are what pricing reflects.</p>
+        <p>See the <a href="/services#pricing">Services page</a> for tier structure.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">
+      <h3>What is a healthy ACoS on Amazon?</h3>
+      <div class="faq-toggle">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="0" x2="7" y2="14"/><line x1="0" y1="7" x2="14" y2="14"/></svg>
+      </div>
+    </div>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>The standard answer is 15–30%, but <strong>that's the wrong question to optimize around</strong>. ACoS measures the ratio of ad spend to ad-attributed sales for a specific campaign. It tells you how efficiently a single campaign converts clicks into sales. It does not tell you whether your advertising is actually growing your business.</p>
+        <p>A campaign with a 45% ACoS driving new customer acquisition and organic rank improvement may be more valuable than a 12% ACoS campaign that's only converting branded searches — sales you'd likely get without the ad. The metric that matters more is <strong>TACoS</strong> (Total Advertising Cost of Sales), which measures ad spend against your total revenue, not just ad-attributed revenue. That's the number that tells you whether your advertising investment is working as part of the larger system.</p>
+        <div class="faq-callout">
+          <strong>The short version:</strong> A "healthy" ACoS depends entirely on what the campaign is designed to do. There's no universal benchmark. Anyone who gives you one without understanding your account, your margins, and your goals is guessing.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">
+      <h3>What's the difference between ACoS and TACoS?</h3>
+      <div class="faq-toggle">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="0" x2="7" y2="14"/><line x1="0" y1="7" x2="14" y2="14"/></svg>
+      </div>
+    </div>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p><strong>ACoS</strong> (Advertising Cost of Sales) = ad spend ÷ ad-attributed sales. It measures campaign-level efficiency — how much you spend on ads relative to the sales those specific ads generate.</p>
+        <p><strong>TACoS</strong> (Total Advertising Cost of Sales) = ad spend ÷ total revenue. It measures how much of your overall revenue is going toward advertising, regardless of whether sales came from ads directly.</p>
+        <p>The difference matters because advertising on Amazon doesn't just generate ad sales. Well-structured campaigns drive keyword ranking improvements, organic visibility, and brand recognition — all of which generate sales that don't show up in your ACoS calculation. If your ACoS is flat but your TACoS is declining, that usually means your organic sales are growing — which means advertising is doing its job even if the campaign-level metric doesn't look like it.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">
+      <h3>What does an Amazon PPC specialist actually do?</h3>
+      <div class="faq-toggle">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="0" x2="7" y2="14"/><line x1="0" y1="7" x2="14" y2="14"/></svg>
+      </div>
+    </div>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>At a minimum: building campaign structures, researching and selecting keyword targets, setting and adjusting bids, analyzing search term reports, adding negative keywords, and reporting on performance. That's the baseline.</p>
+        <p>What separates effective management from baseline management is <strong>whether those activities are guided by a strategy or just happening on a schedule</strong>. Adjusting bids daily doesn't help if there's no framework for what those adjustments are trying to achieve. Running search term reports doesn't help if there's no targeting architecture determining where winning terms should be promoted and where losers should be negated.</p>
+        <p>DialedPPC operates at the system level: campaign architecture, targeting strategy, spend flow, and negation — the structural decisions that determine whether individual optimizations compound into results or just churn.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div class="channel-divider">
+  <div class="line"></div>
+  <span class="label">Hiring Decisions</span>
+  <div class="line"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SECTION 2: Working With DialedPPC
+     ═══════════════════════════════════════════ -->
+<section class="faq-section">
+  <div class="section-label" style="color: var(--accent-green);">Hiring & Working Together</div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">
+      <h3>Should I hire an agency, a specialist, or manage PPC myself?</h3>
+      <div class="faq-toggle">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="0" x2="7" y2="14"/><line x1="0" y1="7" x2="14" y2="14"/></svg>
+      </div>
+    </div>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>The label matters less than the structure. The important questions are: <strong>who is doing the actual work on your account, and can you talk to that person directly?</strong></p>
+        <p>At many agencies, the person you talk to during the sales process isn't the person managing your campaigns. You get an account manager relaying information between you and the analyst. That layer adds cost, slows communication, and dilutes context. With a solo specialist, you get the person doing the work — no translation layer, no relay.</p>
+        <p>Self-management works if you have the time and interest to develop real expertise. But PPC on Amazon is a daily discipline, not a set-it-and-check-monthly activity. If you're running a business, the time you'd spend learning and managing campaigns is usually worth more applied elsewhere.</p>
+        <div class="faq-callout">
+          <strong>DialedPPC is a specialist practice, not an agency.</strong> One practitioner, direct access, limited client roster. No account managers, no junior analysts, no hand-offs.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">
+      <h3>Why do you only manage Amazon advertising?</h3>
+      <div class="faq-toggle">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="0" x2="7" y2="14"/><line x1="0" y1="7" x2="14" y2="14"/></svg>
+      </div>
+    </div>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Because PPC on Amazon is not the same discipline as PPC on Google or Meta. Amazon is a marketplace with its own search algorithm, its own organic ranking mechanics, and a buying environment where ad performance is directly tied to listing quality, keyword indexing, and catalog health. Managing ads well here requires understanding that ecosystem — not just the ad console.</p>
+        <p>Spreading across multiple platforms means either doing all of them at surface level or building a team large enough to go deep on each. DialedPPC stays focused on Amazon because doing it well requires that depth.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">
+      <h3>How involved do I need to be?</h3>
+      <div class="faq-toggle">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="0" x2="7" y2="14"/><line x1="0" y1="7" x2="14" y2="14"/></svg>
+      </div>
+    </div>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Not very, once the strategy is established. During the initial audit and strategy phase, your input matters — understanding your business objectives, margins, and priorities shapes how campaigns get built. After that, ongoing management doesn't require your daily attention.</p>
+        <p>You'll receive structured reporting that connects ad performance to business outcomes. When something warrants a real conversation — a strategic shift, a market change, an opportunity worth discussing — we'll have one. When it doesn't, you won't be sitting through a status meeting for the sake of it.</p>
+        <p><strong>Questions are always welcome.</strong> If you want to understand why a campaign is structured a certain way or what a metric means for your business, ask. Curiosity makes the working relationship better. The only thing that doesn't work is needing to direct every decision — if you need to control the how, a specialist isn't what you're looking for.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">
+      <h3>Why no weekly calls?</h3>
+      <div class="faq-toggle">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="0" x2="7" y2="14"/><line x1="0" y1="7" x2="14" y2="14"/></svg>
+      </div>
+    </div>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Because there's rarely something of consequence to report every single week. And when there is, it usually can't wait for a scheduled meeting anyway.</p>
+        <p>Standing weekly calls tend to become performance theater — manufacturing updates to fill a time slot rather than communicating when something actually matters. That time is better spent on the work itself. When reporting is structured well and communication happens with purpose, you stay more informed than a weekly call ever would, without spending an hour on a call where both parties are wondering what to talk about.</p>
+        <p>When something warrants a conversation — a strategic decision, a significant performance shift, an opportunity worth exploring together — we have one. Direct and timely, not deferred to the next scheduled slot.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div class="channel-divider">
+  <div class="line"></div>
+  <span class="label">Service Details</span>
+  <div class="line"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SECTION 3: Service & Process
+     ═══════════════════════════════════════════ -->
+<section class="faq-section">
+  <div class="section-label" style="color: var(--accent-green);">Service & Process</div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">
+      <h3>What happens after the 90-day initial period?</h3>
+      <div class="faq-toggle">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="0" x2="7" y2="14"/><line x1="0" y1="7" x2="14" y2="14"/></svg>
+      </div>
+    </div>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Service continues month-to-month. No long-term contract, no cancellation fees. The 90-day initial engagement exists because Amazon advertising needs that minimum runway to build a foundation, collect meaningful data, and demonstrate real results. Evaluating performance before that point doesn't give either side enough to work with.</p>
+        <p>After 90 days, if the work is delivering value, most clients continue. If it isn't, you're free to go. The work should speak for itself.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">
+      <h3>What if my listings need work?</h3>
+      <div class="faq-toggle">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="0" x2="7" y2="14"/><line x1="0" y1="7" x2="14" y2="14"/></svg>
+      </div>
+    </div>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>We'll tell you. Clearly, specifically, and with reasoning you can act on — whether you address it yourself, use your existing team, or bring in a listing specialist.</p>
+        <p>This matters because <strong>advertising can only convert the traffic it generates if the listing does its job</strong>. Ads drive shoppers to your product page. What happens after they land there — whether they buy, bounce, or keep scrolling — is determined by the listing: images, copy, reviews, pricing, A+ content. The best campaign structure in the world won't compensate for a listing that doesn't convert.</p>
+        <p>It's one of the most common patterns we see: ads are blamed for poor performance when the real issue is that the listing isn't giving shoppers a reason to buy. High impressions and clicks with low conversion rates almost always point back to the listing, not the campaign. We'll identify that clearly and explain exactly what needs attention and why, so the fix is targeted rather than guesswork.</p>
+        <p>Listing creation and design isn't part of DialedPPC's service scope — that's a deliberate boundary, not a gap. Keeping the focus on advertising means the work stays at the level it needs to be. But identifying listing issues that affect ad performance is absolutely part of the job.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">
+      <h3>Do you use automation or AI tools for bid management?</h3>
+      <div class="faq-toggle">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="0" x2="7" y2="14"/><line x1="0" y1="7" x2="14" y2="14"/></svg>
+      </div>
+    </div>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Tools are part of the workflow. Strategy is not delegated to them.</p>
+        <p>Automation handles repetitive execution — pulling reports, calculating adjustments, flagging anomalies. That's what it's good at. What automation can't do is decide why a campaign exists, what role it plays in your overall strategy, or when the data is telling you something the formula doesn't account for.</p>
+        <p>Every bid adjustment at DialedPPC flows from a defined framework tied to your business objectives — not from a tool's default algorithm or a "set it and let AI optimize" approach. Tools execute the math. The math serves the strategy. The strategy serves your business.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">
+      <h3>What kind of reporting will I receive?</h3>
+      <div class="faq-toggle">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="0" x2="7" y2="14"/><line x1="0" y1="7" x2="14" y2="14"/></svg>
+      </div>
+    </div>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Monthly performance analysis that connects what your ads are doing to what your business is doing. Not a dashboard full of metrics — an analysis that tells you what happened, what it means, and what comes next.</p>
+        <p>Reporting is structured around the questions that actually matter to your business: Is advertising driving growth or recycling existing demand? Where is spend being wasted? Are organic rankings improving as a result of ad strategy? What's changing and why? The format adapts to how you process information, not a one-size-fits-all template.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">
+      <h3>I'm new to Amazon — can you set up ads from scratch?</h3>
+      <div class="faq-toggle">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="0" x2="7" y2="14"/><line x1="0" y1="7" x2="14" y2="14"/></svg>
+      </div>
+    </div>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Yes. The same methodology applies whether your account has five years of campaign history or none. For new accounts, campaign structure gets built from scratch based on your catalog, your category, and your objectives. The fundamentals don't change: disciplined structure, intentional targeting, and honest reporting from day one.</p>
+        <p>New accounts actually have an advantage in some ways — there's no legacy structure to untangle, no years of overlapping campaigns to sort through. The strategy gets built clean.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div class="channel-divider">
+  <div class="line"></div>
+  <span class="label">Expectations</span>
+  <div class="line"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SECTION 4: Expectations
+     ═══════════════════════════════════════════ -->
+<section class="faq-section">
+  <div class="section-label" style="color: var(--accent-green);">Setting Expectations</div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">
+      <h3>Can you guarantee specific results?</h3>
+      <div class="faq-toggle">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="0" x2="7" y2="14"/><line x1="0" y1="7" x2="14" y2="14"/></svg>
+      </div>
+    </div>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>No. And you should be cautious of anyone who does before seeing your account.</p>
+        <p>Advertising performance depends on factors that extend well beyond campaign management: your product, your pricing, your competition, your listing quality, your reviews, your inventory, and the broader market. A good PPC manager controls the advertising variables. They don't control the rest.</p>
+        <p>What you can expect: <strong>a clear strategy with defined reasoning, honest reporting on what's working and what isn't, and adjustments based on data rather than hope</strong>. If something isn't producing results, you'll know why and what's being done about it — not just that "the algorithm needs more time."</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleFaq(this)">
+      <h3>I'm not sure if my ads are the problem. How do I know?</h3>
+      <div class="faq-toggle">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="0" x2="7" y2="14"/><line x1="0" y1="7" x2="14" y2="14"/></svg>
+      </div>
+    </div>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>That's a reasonable place to be. Most of the accounts we look at aren't broken in obvious ways. The campaigns are running. The reports look fine. But the business outcomes those numbers are supposed to drive don't match up — spend keeps rising, growth is flat, and nobody can clearly explain why.</p>
+        <p>Sometimes it is the ads. Sometimes it's the listing. Sometimes it's a structural issue that's been papered over by surface-level metrics that look healthy. Part of the initial audit is figuring out where the real issues are, whether they're in advertising, in the product page, or somewhere in between.</p>
+        <p>If you reach out and we determine that advertising isn't the issue, we'll tell you that too. There's no value in managing campaigns that aren't the bottleneck.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section class="faq-cta">
+  <h2>Still have questions?</h2>
+  <p>Reach out. If we can help, we'll tell you how. If we can't, we'll tell you that too.</p>
+  <a href="/services#contact" class="btn-primary">Get in touch →</a>
+</section>
+
+<!-- FOOTER -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does Amazon PPC management cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most agencies charge 10–20% of monthly ad spend, meaning their fee grows as your spend grows — whether the work changed or not. DialedPPC uses flat monthly pricing based on what actually drives the work: catalog size and order volume. A larger catalog means more campaigns and targeting decisions. Higher order volume means more data to analyze and act on. Pricing reflects the real workload, not an arbitrary spend number."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a healthy ACoS on Amazon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The standard answer is 15–30%, but ACoS in isolation is the wrong metric to optimize around. A campaign with a 45% ACoS driving new customer acquisition may be more valuable than a 12% ACoS campaign converting branded searches. TACoS (Total Advertising Cost of Sales) — ad spend against total revenue — is a better indicator of whether advertising is working."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between ACoS and TACoS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ACoS (Advertising Cost of Sales) measures ad spend divided by ad-attributed sales — campaign-level efficiency. TACoS (Total Advertising Cost of Sales) measures ad spend divided by total revenue — how much of your overall business goes toward advertising. TACoS captures the organic and indirect benefits of advertising that ACoS misses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does an Amazon PPC specialist actually do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At minimum: building campaigns, researching keywords, adjusting bids, analyzing search terms, adding negatives, and reporting. What separates effective management is whether those activities are guided by a strategy or just happening on a schedule."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I hire an agency or a specialist for Amazon PPC?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The label matters less than the structure. The important questions are: who is doing the actual work on your account, and can you talk to that person directly? At many agencies, the person you talk to isn't the person managing your campaigns."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does DialedPPC only manage Amazon advertising?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PPC on Amazon is not the same discipline as PPC on Google or Meta. Amazon is a marketplace with its own search algorithm, organic ranking mechanics, and buying environment where ad performance is tied to listing quality and catalog health. Doing it well requires that depth of focus."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens after the 90-day initial period?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Service continues month-to-month. No long-term contract, no cancellation fees. The 90-day initial engagement gives enough runway to build a foundation, collect meaningful data, and demonstrate real results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you guarantee specific Amazon PPC results?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Advertising performance depends on factors beyond campaign management: product, pricing, competition, listing quality, reviews, and inventory. What you can expect is a clear strategy, honest reporting, and adjustments based on data rather than hope."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my Amazon listings need work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We'll tell you — clearly, specifically, and with reasoning you can act on. Advertising can only convert traffic if the listing does its job. High impressions with low conversion rates almost always point to the listing, not the campaign. Listing creation isn't part of DialedPPC's scope, but identifying listing issues that affect ad performance absolutely is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you use AI or automation tools for bid management?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tools are part of the workflow. Strategy is not delegated to them. Automation handles repetitive execution. Every bid adjustment flows from a defined framework tied to business objectives — not from a tool's default algorithm."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you set up Amazon ads from scratch for a new seller?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The same methodology applies whether your account has years of history or none. For new accounts, campaign structure gets built from scratch based on your catalog, category, and objectives."
+      }
+    }
+  ]
+}
+</script>
+
+<script is:inline>
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    const wasOpen = item.classList.contains('open');
+
+    // Close all
+    document.querySelectorAll('.faq-item.open').forEach(i => {
+      i.classList.remove('open');
+    });
+
+    // Toggle clicked
+    if (!wasOpen) {
+      item.classList.add('open');
+    }
+  }
+
+  // Animate in on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
+
+  document.querySelectorAll('.faq-item').forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(15px)';
+    el.style.transition = `opacity 0.5s ease ${i * 0.05}s, transform 0.5s ease ${i * 0.05}s`;
+    observer.observe(el);
+  });
+</script>
+
+<style is:global>
+/* HERO */
+.faq-hero {
+  padding: 9rem 2rem 3.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faq-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin-bottom: 1rem;
+  max-width: 650px;
+}
+
+.faq-hero .subhead {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 550px;
+  line-height: 1.7;
+}
+
+/* FAQ SECTIONS */
+.faq-section {
+  padding: 3.5rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faq-section .section-label {
+  color: var(--accent-green);
+  margin-bottom: 2rem;
+}
+
+/* ACCORDION */
+.faq-item {
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(160deg, var(--bg-elevated) 0%, #141c2e 100%);
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.faq-item:hover { border-color: var(--border-active); }
+.faq-item.open { border-color: rgba(52,211,153,0.25); }
+
+.faq-question {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.faq-question:hover { background: rgba(255,255,255,0.015); }
+
+.faq-question h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  flex: 1;
+}
+
+.faq-toggle {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  transition: transform 0.3s;
+  color: var(--text-dim);
+}
+
+.faq-item.open .faq-toggle { transform: rotate(45deg); color: var(--accent-green); }
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.3s;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 600px;
+}
+
+.faq-answer-inner {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.faq-answer-inner p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+.faq-answer-inner p:last-child { margin-bottom: 0; }
+
+.faq-answer-inner strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.faq-answer-inner a {
+  color: var(--accent-green);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(52,211,153,0.3);
+  transition: border-color 0.3s;
+}
+
+.faq-answer-inner a:hover { border-color: var(--accent-green); }
+
+/* Inline callout inside answers */
+.faq-callout {
+  margin: 0.75rem 0;
+  padding: 0.85rem 1rem;
+  background: rgba(52,211,153,0.04);
+  border-left: 2px solid rgba(52,211,153,0.3);
+  border-radius: 0 4px 4px 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.faq-callout strong { color: var(--accent-green); font-weight: 500; }
+
+/* CTA SECTION */
+.faq-cta {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.faq-cta h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.faq-cta p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* SCHEMA MARKUP — hidden */
+.schema-hidden { display: none; }
+
+/* FOOTER */
+.site-footer {
+  padding: 3rem 2rem;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-brand { font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: var(--text-dim); }
+.footer-links { display: flex; gap: 2rem; }
+.footer-links a { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-dim); text-decoration: none; transition: color 0.3s; }
+.footer-links a:hover { color: var(--text-secondary); }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .faq-hero, .faq-section, .faq-cta { padding-left: 1.25rem; padding-right: 1.25rem; }
+  .faq-question { padding: 1rem 1.25rem; }
+  .faq-answer-inner { padding: 0 1.25rem 1.25rem; }
+  .nav-links .desktop-only { display: none; }
+  .site-footer { flex-direction: column; gap: 1.5rem; text-align: center; }
+}
+
+</style>
+
+</BaseLayout>

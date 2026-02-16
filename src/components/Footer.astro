@@ -1,0 +1,17 @@
+---
+interface Props {
+  hasContact?: boolean;
+}
+
+const { hasContact = false } = Astro.props;
+const contactHref = hasContact ? '#contact' : '/services#contact';
+---
+
+<footer class="site-footer">
+  <div class="footer-brand">DialedPPC</div>
+  <div class="footer-links">
+    <a href="/services">Services</a>
+    <a href="/faq">FAQ</a>
+    <a href={contactHref}>Contact</a>
+  </div>
+</footer>
