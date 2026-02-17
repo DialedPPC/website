@@ -1166,8 +1166,8 @@
 
 
 @media (max-width: 1024px) {
-  .pricing-tiers { grid-template-columns: repeat(3, 1fr); }
-  .timeline-phases { grid-template-columns: repeat(3, 1fr); }
+  .pricing-tiers { grid-template-columns: repeat(2, 1fr); }
+  .timeline-phases { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 900px) {
