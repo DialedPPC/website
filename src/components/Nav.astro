@@ -1,16 +1,21 @@
 ---
-// Nav.astro — Shared navigation component
-// Updated: Feb 17, 2026 — Added mobile hamburger menu
+interface Props {
+  active?: string;
+  hasContact?: boolean;
+}
+
+const { hasContact = false } = Astro.props;
+const contactHref = hasContact ? '#contact' : '/contact';
 ---
 
 <nav class="nav">
   <a href="/" class="nav-logo"><span class="led"></span> DialedPPC</a>
 
-  <!-- Desktop links (unchanged) -->
+  <!-- Desktop links -->
   <div class="nav-links">
     <a href="/services" class="desktop-only">Services</a>
     <a href="/faq" class="desktop-only">FAQ</a>
-    <a href="#contact" class="nav-cta">Get in touch</a>
+    <a href={contactHref} class="nav-cta">Get in touch</a>
   </div>
 
   <!-- Hamburger button (mobile only) -->
@@ -24,7 +29,7 @@
   <div class="mobile-menu">
     <a href="/services">Services</a>
     <a href="/faq">FAQ</a>
-    <a href="#contact" class="nav-cta">Get in touch</a>
+    <a href={contactHref} class="nav-cta">Get in touch</a>
   </div>
 </nav>
 
