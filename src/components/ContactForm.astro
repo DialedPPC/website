@@ -1,0 +1,296 @@
+---
+interface Props {
+  heading?: string;
+  subtext?: string;
+}
+
+const {
+  heading = "Let's see if this is a fit.",
+  subtext
+} = Astro.props;
+---
+
+<section class="cta-section" id="contact">
+  <div class="cta-inner">
+    <div class="section-label" style="color: var(--accent-green);">Get Started</div>
+    <h2>{heading}</h2>
+    {subtext && <p class="cta-subtext">{subtext}</p>}
+
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <p style="display:none"><input name="bot-field"></p>
+
+      <div class="form-grid">
+        <!-- Row 1: Name + Email -->
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Row 2: Brand -->
+        <div class="form-group full-width">
+          <label for="brand">Brand / Storefront Name on Amazon</label>
+          <input type="text" id="brand" name="brand">
+        </div>
+
+        <!-- Row 3: Category + Seller Type -->
+        <div class="form-group">
+          <label for="category">Product Category</label>
+          <input type="text" id="category" name="category">
+        </div>
+        <div class="form-group">
+          <label>Seller Type</label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="seller-type" value="3p">
+              <span class="radio-indicator"></span>
+              Seller Central (3P)
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="seller-type" value="1p">
+              <span class="radio-indicator"></span>
+              Vendor Central (1P)
+            </label>
+          </div>
+        </div>
+
+        <!-- Row 4: Account Status -->
+        <div class="form-group full-width">
+          <label>Account Status</label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="account-status" value="active">
+              <span class="radio-indicator"></span>
+              Active campaigns running
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="account-status" value="new">
+              <span class="radio-indicator"></span>
+              New to Amazon advertising
+            </label>
+          </div>
+        </div>
+
+        <!-- Row 5: Primary Challenge -->
+        <div class="form-group full-width">
+          <label for="challenge">Primary Challenge</label>
+          <select id="challenge" name="challenge">
+            <option value="" disabled selected>Select one</option>
+            <option value="spending-no-returns">Spending without clear returns</option>
+            <option value="low-visibility">Not getting enough visibility</option>
+            <option value="needs-restructuring">Campaigns need restructuring</option>
+            <option value="starting-fresh">Starting from scratch</option>
+            <option value="something-else">Something else</option>
+          </select>
+        </div>
+
+        <!-- Row 6: Budget -->
+        <div class="form-group full-width">
+          <label for="budget">Monthly Advertising Budget</label>
+          <select id="budget" name="budget">
+            <option value="" disabled selected>Select range</option>
+            <option value="under-1k">Under $1,000</option>
+            <option value="1k-3k">$1,000–$3,000</option>
+            <option value="3k-10k">$3,000–$10,000</option>
+            <option value="10k-plus">$10,000+</option>
+            <option value="not-sure">Not sure yet</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-submit">
+        <button type="submit" class="btn-primary">Submit for Review</button>
+      </div>
+    </form>
+    <div class="form-footer">No pitch. No pressure. No calendar ambush.</div>
+  </div>
+</section>
+
+<style>
+  .cta-section {
+    padding: 5rem 2rem;
+    background: linear-gradient(160deg, var(--bg-surface) 0%, var(--bg-warm) 100%);
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .cta-inner {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .cta-inner h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
+  }
+
+  .cta-subtext {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group.full-width {
+    grid-column: 1 / -1;
+  }
+
+  .form-group > label:first-child {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+    margin-bottom: 0.5rem;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group select,
+  .form-group textarea {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 300;
+    padding: 0.85rem 1rem;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: 4px;
+    color: var(--text-primary);
+    outline: none;
+    transition: border-color 0.3s;
+  }
+
+  .form-group input[type="text"]:focus,
+  .form-group input[type="email"]:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--accent-green);
+  }
+
+  .form-group select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238585a0' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 2.5rem;
+  }
+
+  /* Radio Groups */
+  .radio-group {
+    display: flex;
+    gap: 1.25rem;
+    margin-top: 0.25rem;
+  }
+
+  .radio-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .radio-label:hover {
+    color: var(--text-primary);
+  }
+
+  .radio-label input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .radio-indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-elevated);
+    position: relative;
+    flex-shrink: 0;
+    transition: border-color 0.3s;
+  }
+
+  .radio-indicator::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-green);
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+  .radio-label input[type="radio"]:checked + .radio-indicator {
+    border-color: var(--accent-green);
+  }
+
+  .radio-label input[type="radio"]:checked + .radio-indicator::after {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .radio-label input[type="radio"]:focus-visible + .radio-indicator {
+    outline: 2px solid var(--accent-green);
+    outline-offset: 2px;
+  }
+
+  /* Submit & Footer */
+  .form-submit {
+    margin-top: 1rem;
+  }
+
+  .form-footer {
+    margin-top: 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    letter-spacing: 0.03em;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .form-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .radio-group {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .cta-section {
+      padding: 3.5rem 1.25rem;
+    }
+  }
+</style>
