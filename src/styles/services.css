@@ -786,7 +786,7 @@
 
 .pricing-tiers {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem;
   margin-bottom: 2.5rem;
 }
@@ -798,6 +798,8 @@
   padding: 2rem 1.75rem;
   transition: border-color 0.3s, transform 0.3s;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .pricing-card:hover {
@@ -826,11 +828,21 @@
   margin-bottom: 0.5rem;
 }
 
-.pricing-card-spend {
+.pricing-card-desc {
   font-family: var(--font-body);
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   color: var(--text-secondary);
+  line-height: 1.7;
   margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+.pricing-card-detail {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  letter-spacing: 0.03em;
+  margin-top: 0.5rem;
 }
 
 .pricing-card-price {
@@ -848,13 +860,6 @@
   color: var(--text-dim);
 }
 
-.pricing-card-setup {
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  color: var(--text-dim);
-  letter-spacing: 0.03em;
-  margin-top: 0.5rem;
-}
 
 .pricing-includes {
   max-width: 700px;
@@ -1083,7 +1088,7 @@
 
 
 @media (max-width: 1024px) {
-  .pricing-tiers { grid-template-columns: repeat(3, 1fr); }
+  .pricing-tiers { grid-template-columns: repeat(2, 1fr); }
   .timeline-phases { grid-template-columns: repeat(3, 1fr); }
 }
 
