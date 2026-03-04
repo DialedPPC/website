@@ -1,0 +1,171 @@
+---
+// WhitepaperForm.astro — Email gate for free whitepaper download (Netlify Forms)
+---
+
+<section class="whitepaper-section" id="whitepaper">
+  <div class="whitepaper-inner">
+    <div class="whitepaper-content">
+      <div class="section-label" style="color: var(--accent-green);">Free Download</div>
+      <h2>Get Your Free Copy</h2>
+      <p class="whitepaper-desc">
+        Enter your name and email below. We'll send you immediate access to the full whitepaper — no follow-up sequence, no spam.
+      </p>
+    </div>
+
+    <div class="whitepaper-form-wrap">
+      <div class="gear-border-top"></div>
+      <form name="whitepaper-download" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="whitepaper-download">
+        <p style="display:none"><input name="bot-field"></p>
+
+        <div class="form-group">
+          <label for="wp-name">Name</label>
+          <input type="text" id="wp-name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="wp-email">Email</label>
+          <input type="email" id="wp-email" name="email" required>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit" class="btn-primary btn-whitepaper">
+            <svg class="gear-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 10a2 2 0 100-4 2 2 0 000 4z" fill="currentColor"/>
+              <path d="M14.5 6.5h-1.1a5.5 5.5 0 00-.8-1.9l.8-.8a.5.5 0 000-.7l-.7-.7a.5.5 0 00-.7 0l-.8.8a5.5 5.5 0 00-1.9-.8V1.5a.5.5 0 00-.5-.5h-1a.5.5 0 00-.5.5v1.1a5.5 5.5 0 00-1.9.8l-.8-.8a.5.5 0 00-.7 0l-.7.7a.5.5 0 000 .7l.8.8a5.5 5.5 0 00-.8 1.9H1.5a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1.1a5.5 5.5 0 00.8 1.9l-.8.8a.5.5 0 000 .7l.7.7a.5.5 0 00.7 0l.8-.8a5.5 5.5 0 001.9.8v1.1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1.1a5.5 5.5 0 001.9-.8l.8.8a.5.5 0 00.7 0l.7-.7a.5.5 0 000-.7l-.8-.8a5.5 5.5 0 00.8-1.9h1.1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5z" fill="currentColor" opacity="0.6"/>
+            </svg>
+            Get the Free Whitepaper
+          </button>
+        </div>
+      </form>
+      <div class="gear-border-bottom"></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .whitepaper-section {
+    padding: 5rem 2rem;
+    background: linear-gradient(160deg, #0f1a1a 0%, #111f20 50%, var(--bg-surface) 100%);
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .whitepaper-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .whitepaper-inner h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
+  }
+
+  .whitepaper-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .whitepaper-form-wrap {
+    position: relative;
+    background: linear-gradient(160deg, var(--bg-elevated) 0%, #141c2e 100%);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 2rem;
+  }
+
+  /* Steampunk gear-motif top border */
+  .gear-border-top,
+  .gear-border-bottom {
+    position: absolute;
+    left: 1.5rem;
+    right: 1.5rem;
+    height: 2px;
+    background: repeating-linear-gradient(
+      90deg,
+      var(--accent-green) 0px,
+      var(--accent-green) 4px,
+      transparent 4px,
+      transparent 8px,
+      rgba(52,211,153,0.3) 8px,
+      rgba(52,211,153,0.3) 10px,
+      transparent 10px,
+      transparent 14px
+    );
+    opacity: 0.5;
+  }
+
+  .gear-border-top {
+    top: 0;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .gear-border-bottom {
+    bottom: 0;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .whitepaper-form-wrap .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .whitepaper-form-wrap .form-group label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+    margin-bottom: 0.5rem;
+  }
+
+  .whitepaper-form-wrap .form-group input {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 300;
+    padding: 0.85rem 1rem;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: 4px;
+    color: var(--text-primary);
+    outline: none;
+    transition: border-color 0.3s;
+  }
+
+  .whitepaper-form-wrap .form-group input:focus {
+    border-color: var(--accent-green);
+  }
+
+  .whitepaper-form-wrap .form-submit {
+    margin-top: 0.5rem;
+  }
+
+  .btn-whitepaper {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .gear-icon {
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 700px) {
+    .whitepaper-inner {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .whitepaper-section {
+      padding: 3.5rem 1.25rem;
+    }
+  }
+</style>

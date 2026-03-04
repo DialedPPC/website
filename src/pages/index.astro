@@ -1,12 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ContactForm from '../components/ContactForm.astro';
+import WhitepaperForm from '../components/WhitepaperForm.astro';
 import '../styles/index.css';
 ---
 
 <BaseLayout
   title="DialedPPC | Amazon PPC Management, Dialed In"
-  description="Focused Amazon PPC management from an experienced consultant. Flat monthly fee, no meeting theater, direct expert access."
+  description="Free whitepaper: the hidden structural problem most Amazon PPC campaigns share — and what to do about it."
   active="home" hasContact
 >
 
@@ -17,74 +17,76 @@ import '../styles/index.css';
   <div class="hero-inner">
     <div class="hero-content">
       <h1 class="animate-in">
-        Ads management shouldn't require your <span class="accent">constant attention.</span>
+        The Hidden Problem Your <span class="accent">Bid Tool Can't See</span>
       </h1>
       <p class="subhead animate-in delay-2">
-        Amazon PPC management built to run, report with clarity, and stay out of your way.
+        Most Amazon sellers are optimizing bids on campaigns that were built wrong from the start. This free whitepaper shows you where the real problem lives — and what to do about it.
       </p>
       <div class="hero-cta-group animate-in delay-3">
-        <a href="#contact" class="btn-primary">Get in touch →</a>
+        <a href="#whitepaper" class="btn-primary">Get the Free Whitepaper ↓</a>
+        <a href="https://dialedadmin.gumroad.com/l/egeft" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+          Full Guide — $19 →
+        </a>
       </div>
-      <p class="scarcity animate-in delay-4">Currently accepting new clients</p>
     </div>
 
     <div class="hero-visual animate-in delay-2">
       <div class="vu-display">
         <div class="vu-header">
-          <span class="vu-title">Account Performance</span>
-          <span class="vu-status"><span class="dot"></span> Dialed</span>
+          <span class="vu-title">What's Inside</span>
+          <span class="vu-status"><span class="dot"></span> Free</span>
         </div>
         <div class="vu-meter">
           <div class="vu-meter-label">
             <span class="vu-meter-name">Campaign Structure</span>
-            <span class="vu-meter-value">Optimized</span>
+            <span class="vu-meter-value">The real lever</span>
+          </div>
+          <div class="vu-meter-bar">
+            <div class="vu-meter-fill green" style="width: 92%"></div>
+          </div>
+        </div>
+        <div class="vu-meter">
+          <div class="vu-meter-label">
+            <span class="vu-meter-name">Bid Automation Limits</span>
+            <span class="vu-meter-value amber">Exposed</span>
+          </div>
+          <div class="vu-meter-bar">
+            <div class="vu-meter-fill amber" style="width: 65%"></div>
+          </div>
+        </div>
+        <div class="vu-meter">
+          <div class="vu-meter-label">
+            <span class="vu-meter-name">Wasted Spend Patterns</span>
+            <span class="vu-meter-value">Identified</span>
+          </div>
+          <div class="vu-meter-bar">
+            <div class="vu-meter-fill green" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="vu-meter">
+          <div class="vu-meter-label">
+            <span class="vu-meter-name">What To Do About It</span>
+            <span class="vu-meter-value">Clear path</span>
           </div>
           <div class="vu-meter-bar">
             <div class="vu-meter-fill green" style="width: 88%"></div>
           </div>
-        </div>
-        <div class="vu-meter">
-          <div class="vu-meter-label">
-            <span class="vu-meter-name">Spend Efficiency</span>
-            <span class="vu-meter-value">On target</span>
-          </div>
-          <div class="vu-meter-bar">
-            <div class="vu-meter-fill green" style="width: 76%"></div>
-          </div>
-        </div>
-        <div class="vu-meter">
-          <div class="vu-meter-label">
-            <span class="vu-meter-name">Organic Velocity</span>
-            <span class="vu-meter-value amber">Climbing</span>
-          </div>
-          <div class="vu-meter-bar">
-            <div class="vu-meter-fill amber" style="width: 62%"></div>
-          </div>
-        </div>
-        <div class="vu-meter">
-          <div class="vu-meter-label">
-            <span class="vu-meter-name">Wasted Spend</span>
-            <span class="vu-meter-value">Contained</span>
-          </div>
-          <div class="vu-meter-bar">
-            <div class="vu-meter-fill split" style="width: 15%"></div>
-          </div>
           <div class="vu-meter-ticks">
-            <span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+            <span></span><span></span><span></span><span></span><span></span>
           </div>
         </div>
         <div class="vu-footer">
           <div class="vu-stat">
-            <div class="vu-stat-value">24/7</div>
-            <div class="vu-stat-label">Monitoring</div>
+            <div class="vu-stat-value">Free</div>
+            <div class="vu-stat-label">Whitepaper</div>
           </div>
           <div class="vu-stat">
-            <div class="vu-stat-value">Flat</div>
-            <div class="vu-stat-label">Fee Structure</div>
+            <div class="vu-stat-value">PDF</div>
+            <div class="vu-stat-label">Instant Access</div>
           </div>
           <div class="vu-stat">
             <div class="vu-stat-value">Zero</div>
-            <div class="vu-stat-label">Theater</div>
+            <div class="vu-stat-label">Fluff</div>
           </div>
         </div>
       </div>
@@ -396,7 +398,7 @@ import '../styles/index.css';
 <!-- ═══════════════════════════════════════════════
      CTA / FORM
      ═══════════════════════════════════════════════ -->
-<ContactForm subtext="A few quick questions. You'll hear back within two business days with an honest assessment." />
+<WhitepaperForm />
 
 <!-- FOOTER -->
 

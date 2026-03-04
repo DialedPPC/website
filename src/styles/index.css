@@ -53,11 +53,29 @@
   display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;
 }
 
-.scarcity {
+/* Secondary CTA — Gumroad link */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  padding: 0.85rem 1.75rem;
+  background: transparent;
   color: var(--accent-amber);
-  letter-spacing: 0.05em;
+  border: 1px solid var(--accent-amber-warm);
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background: rgba(245, 158, 11, 0.08);
+  border-color: var(--accent-amber);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.12);
 }
 
 /* Hero VU Display */
